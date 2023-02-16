@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="bg-blue-800 flex justify-between items-center px-3 py-2">
+        <h1 class="text-5xl uppercase text-white font-extrabold">Money$</h1>
+        <nav >
+            <ul class="grid grid-flow-col gap-4 text-white font-semibold">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Gallary</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="bg-slate-400 pt-10 flex w-8/12 mx-auto p-10 rounded-3xl mt-10">
+        <div class="w-6/12 flex flex-col items-center justify-center p-2"> <img class="" src="./CalMon.png" alt=""></div>
+        <div class="w-6/12 flex flex-col justify-center p-4">
+            <h3 class="bg-black p-3 text-center text-white rounded text-3xl font-bold">Life Building Calculate</h3>
+            <label class="mt-2" for="income">Income
+                <input class="p-1 w-full rounded" id="income" type="number">
+            </label>
+            <h3 class="rounded text-3xl mt-10 font-semibold">Expenses: </h3>
+            <label class="mt-2" for="Food">Food
+                <input class="p-1 w-full rounded" id="food" type="number">
+            </label>
+            <label class="mt-2" for="Rent">Rent
+                <input class="p-1 w-full rounded" id="rent" type="number">
+            </label>
+            <label class="mt-2" for="Clothes">Clothes
+                <input class="p-1 w-full rounded" id="dress" type="number">
+            </label>
+            <input class="bg-blue-900 mt-3 rounded p-2 text-white font-semibold w-2/4 mx-auto" id="calculate" type="button" value="Calculate">
+            <h3 class="text-white rounded font-extrabold text-1xl mt-5">Total Expenses: $<span id="toalExpenses">000</span></h3>
+            <h3 class="text-white rounded font-extrabold text-1xl mt-1">Balance: $<span id="balance">000</span></h3>
+            <div class="flex justify-between items-center">
+                <label class="mt-2" for="save">save
+                    <input class="w-40 p-1 rounded" id="save" type="number">
+                </label>
+                <p> % </p>
+                <input class="bg-blue-900 text-white rounded p-2 font-extrabold" id="saveBtn" type="button" value="save">
+         </div>
+         <div>
+            <h3 class="text-white rounded font-extrabold text-1xl mt-5">Saving Amount: $<span id="savingAmmount">000</span></h3>
+            <h3 class="text-white rounded font-extrabold text-1xl mt-1">Remaining Balance: $<span id="RemainBalance">000</span></h3></div>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
